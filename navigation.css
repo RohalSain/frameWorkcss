@@ -1,0 +1,261 @@
+/* vertical Navigation  vertical-nav-bar */
+* {
+ margin: 0;
+ padding: 0;
+}
+.vertical-nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+  }
+
+.vertical-nav-bar li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+ }
+
+.vertical-nav-bar li:last-child {
+    border-bottom: none;
+}
+
+
+.vertical-nav-bar li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+} 
+
+.vertical-nav-bar li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.vertical-nav-bar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Fixed Full-height Side Nav .fixed-full-height-side-nav*/
+
+.fixed-full-height-side-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    width: 25%;
+    height: 100%;
+    border: .5px solid black;
+    position: fixed;
+    overflow: auto;
+}
+
+.fixed-full-height-side-nav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.fixed-full-height-side-nav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.fixed-full-height-side-nav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.fixed-full-height-side-nav .container {
+    margin-left: 25%;
+    padding: 1px 16px ;
+    height: 10000px;
+}
+
+/* Horizontal Navigation Bar .horizontal-nav-bar*/
+
+.horizontal-nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.horizontal-nav-bar li {
+    float: left;
+}
+
+.horizontal-nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.horizontal-nav-bar li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.horizontal-nav-bar .active {
+    background-color: #4CAF50;
+}
+
+/* Horizontal naviation with left side adding bar .horizontal-left-side-nav-addition */
+
+.horizontal-left-side-nav-addition ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.horizontal-left-side-nav-addition li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+.horizontal-left-side-nav-addition li:last-child {
+     border-right: none;
+}
+
+.horizontal-left-side-nav-addition li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.horizontal-left-side-nav-addition li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.horizontal-left-side-nav-addition .active {
+    background-color: #4CAF50;
+}
+
+.horizontal-left-side-nav-addition .navRightSide {
+    float: right;
+}
+
+/* Horizontal navigation fixed bottom   .horizontal-fixed-bottom-nav*/
+
+.horizontal-fixed-bottom-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+.horizontal-fixed-bottom-nav li {
+    float: left;
+}
+
+.horizontal-fixed-bottom-nav li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #666;
+}
+
+.horizontal-fixed-bottom-nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.horizontal-fixed-bottom-nav .active {
+    background-color: #4CAF50;
+}
+.horizontal-fixed-bottom-nav .container {
+    padding:20px;
+    background-color:#1abc9c;
+    height:1500px;
+}
+
+/* Horizontal navigation fixed top .horizontal-fixed-top-nav*/
+
+.horizontal-fixed-top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #555;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.horizontal-fixed-top-nav li {
+    float: left;
+}
+
+.horizontal-fixed-top-nav li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.horizontal-fixed-top-nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.horizontal-fixed-top-nav .active {
+    background-color: #4CAF50;
+}
+.horizontal-fixed-top-nav .container {
+    padding:20px;
+    margin-top: 30px;
+    background-color:#1abc9c;
+    height:1500px;
+}
+
+/* Horizontal Sticky Bar .horizontal-sticky-nav*/
+
+.horizontal-sticky-nav ul {
+    list-style: none;
+    padding: 0;
+    font-size: 28px;
+    margin: 0;
+    overflow: hidden;
+    background-color: #555;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.horizontal-sticky-nav li {
+    float: left;
+}
+
+.horizontal-sticky-nav li a {
+    padding: 14px 16px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-sticky-nav li a:hover {
+    background-color: #111;
+}
+
+.horizontal-sticky-nav .active {
+    background-color: #4CAF50;
+}
+
+.horizontal-sticky-nav .container {
+    height: 1500px;
+    font-size: inherit;
+}
